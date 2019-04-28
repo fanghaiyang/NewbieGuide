@@ -367,35 +367,6 @@ GuidePage.setExitAnimation(exitAnimation)//退出动画
 
 ## 关于我
 
-Github：https://github.com/huburt-Hu
+联系邮箱404583721@qq.com
 
-CSDN：http://blog.csdn.net/Hubert_bing
-
-简书：https://www.jianshu.com/u/002f99a0df6b
-
-掘金：https://juejin.im/user/57bb1fdcc4c971006152d7b0/posts
-
-
-**本人正在考虑新的工作机会，如果有上海的公司，欢迎内推我，联系邮箱654360340@qq.com或者微信h139x726845**
-
-
-## License
-
-
-```
- Copyright 2017 huburt-Hu
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-```
 
