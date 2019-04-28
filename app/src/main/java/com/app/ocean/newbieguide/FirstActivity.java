@@ -115,6 +115,10 @@ public class FirstActivity extends AppCompatActivity {
                             public void onRemoved(Controller controller) {
                                 Toast.makeText(FirstActivity.this, "引导层消失", Toast.LENGTH_SHORT).show();
                             }
+                            @Override
+                            public void onSkiped() {
+
+                            }
                         })
                         .addGuidePage(GuidePage.newInstance()
                                 .addHighLight(btnListener))

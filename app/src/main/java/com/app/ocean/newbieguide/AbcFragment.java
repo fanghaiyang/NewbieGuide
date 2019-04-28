@@ -66,6 +66,10 @@ public class AbcFragment extends Fragment {
                         public void onRemoved(Controller controller) {
                             Log.e("tag", "onRemoved");
                         }
+                        @Override
+                        public void onSkiped() {
+
+                        }
                     })
                     .addGuidePage(GuidePage.newInstance()
                             .addHighLight(textView, HighLight.Shape.CIRCLE)//添加需要高亮的view

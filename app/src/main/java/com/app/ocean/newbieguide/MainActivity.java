@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
                         Log.e(TAG, "NewbieGuide  onRemoved: ");
                         //引导层消失（多页切换不会触发）
                     }
+
+                    @Override
+                    public void onSkiped() {
+
+                    }
                 })
                 .setOnPageChangedListener(new OnPageChangedListener() {
 
