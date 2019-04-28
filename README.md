@@ -48,7 +48,7 @@ module的build.gradle添加
 
 ```
  dependencies {
-	  compile 'com.github.fanghaiyang:NewbieGuide:v2.4.0'
+	  compile 'com.github.fanghaiyang:NewbieGuide:1.0.2'
 	}
 ```
 
