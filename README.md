@@ -6,7 +6,7 @@ Android 快速实现新手引导层的库
 
 这是一款可以通过简洁链式调用，一行代码实现引导层的显示，自动判断首次显示，当然也可以通过参数配置来满足不同的显示逻辑和需求。
 通过自定义layout.xml实现文本及image的添加，非常方便位置的调整，避免代码调整各种不好控制的情况：实验5，6次才最终确定文字等的位置。
-
+原文作者  https://github.com/huburt-Hu/NewbieGuide 新增了跳过下一步引导功能相关设置
 ## 更新日志
 
 [更新日志](https://github.com/fanghaiyang/NewbieGuide/wiki)
