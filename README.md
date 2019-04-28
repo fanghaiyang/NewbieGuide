@@ -390,8 +390,6 @@ NewbieGuide.with(FirstActivity.this)
 
 ![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/skip.jpg)
 
-## [Q&A](https://github.com/fanghaiyang/NewbieGuide/wiki/Q&A)
-
 ### 跳过标签设置
      /**
       * 设置跳过标签
@@ -399,6 +397,8 @@ NewbieGuide.with(FirstActivity.this)
       * @param label 引导标示
       */
   NewbieGuide.setSkipLabel(mContext, "guide1");
+
+## [Q&A](https://github.com/fanghaiyang/NewbieGuide/wiki/Q&A)
 
 遇到问题可以看查看Q&A
 
