@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/huburt-Hu/NewbieGuide.svg)](https://jitpack.io/#huburt-Hu/NewbieGuide)
+[![](https://jitpack.io/v/fanghaiyang/NewbieGuide.svg)](https://jitpack.io/#fanghaiyang/NewbieGuide)
 
 
 # NewbieGuide
@@ -9,19 +9,19 @@ Android 快速实现新手引导层的库
 
 ## 更新日志
 
-[更新日志](https://github.com/huburt-Hu/NewbieGuide/wiki)
+[更新日志](https://github.com/fanghaiyang/NewbieGuide/wiki)
 
 
 ## 效果
 
 改变高亮view的尺寸，并不用调整显示引导层的代码
 
-![sample](https://github.com/huburt-Hu/NewbieGuide/raw/master/screenshoot/device-2017-08-09-161703.png)  
-![sample](https://github.com/huburt-Hu/NewbieGuide/raw/master/screenshoot/change_size.png)
+![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/device-2017-08-09-161703.png)  
+![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/change_size.png)
 
 引导层的xml可以完全自定义，像怎样显示就怎样显示
 
-![sample](https://github.com/huburt-Hu/NewbieGuide/raw/master/screenshoot/shape_dialog.png)
+![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/shape_dialog.png)
 
 
 ## 此库依赖
@@ -48,7 +48,7 @@ module的build.gradle添加
 
 ```
  dependencies {
-	  compile 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+	  compile 'com.github.fanghaiyang:NewbieGuide:v2.4.0'
 	}
 ```
 
@@ -70,7 +70,7 @@ NewbieGuide.with(activity)
 
 通过链式调用，一行代码即可实现引导层的显示，来看下效果：
 
-![simple use](https://github.com/huburt-Hu/NewbieGuide/raw/master/screenshoot/simple_use.png)
+![simple use](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/simple_use.png)
 
 其中：
 
@@ -140,7 +140,7 @@ NewbieGuide.with(FirstActivity.this)
 
 ### 自定义高亮区域绘制内容
 
-该功能主要是为了满足[issue51](https://github.com/huburt-Hu/NewbieGuide/issues/51)提出的需求。
+该功能主要是为了满足[issue51](https://github.com/fanghaiyang/NewbieGuide/issues/51)提出的需求。
 
 首先构建一个HighlightOptions，并设置OnHighlightDrewListener：
 
