@@ -283,6 +283,7 @@ public class FirstActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(View v) {
                                         Toast.makeText(FirstActivity.this, "onClick--guide4", Toast.LENGTH_SHORT).show();
+
                                     }
                                 });
                             }
