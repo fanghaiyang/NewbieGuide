@@ -57,7 +57,7 @@ public class NewbieGuide {
 
     /**
      * 设置跳过标签
-     *
+     * @param context 上下文
      * @param label 引导标示
      */
     public static void setSkipLabel(Context context, String label) {

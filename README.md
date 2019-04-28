@@ -140,7 +140,6 @@ NewbieGuide.with(FirstActivity.this)
 
 ### 自定义高亮区域绘制内容
 
-该功能主要是为了满足[issue51](https://github.com/fanghaiyang/NewbieGuide/issues/51)提出的需求。
 
 首先构建一个HighlightOptions，并设置OnHighlightDrewListener：
 
@@ -241,7 +240,7 @@ setLayoutRes在下层，多个RelativeGuide按照添加顺序依次添加。
 
 ### 引导页控制
 
-v2.2.1版本Controller新增两个方法用于控制引导页的回退，可以在OnLayoutInflatedListener接口的回调方法中获取到controller对象，执行相应的操作。
+Controller新增两个方法用于控制引导页的回退，可以在OnLayoutInflatedListener接口的回调方法中获取到controller对象，执行相应的操作。
 
 ```
 .setOnLayoutInflatedListener(new OnLayoutInflatedListener() {
@@ -392,6 +391,14 @@ NewbieGuide.with(FirstActivity.this)
 ![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/skip.jpg)
 
 ## [Q&A](https://github.com/fanghaiyang/NewbieGuide/wiki/Q&A)
+
+### 跳过标签设置
+     /**
+      * 设置跳过标签
+      * @param context 上下文
+      * @param label 引导标示
+      */
+  NewbieGuide.setSkipLabel(mContext, "guide1");
 
 遇到问题可以看查看Q&A
 
