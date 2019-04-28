@@ -193,7 +193,7 @@ NewbieGuide.with(activity)
 
 我所采用的方式是将说明内容通过xml的方式，自定义摆放位置。使得说明内容高度自定义，不管你是简单的图片，还是对话框类型的都可以。
 
-![like dialog](https://github.com/huburt-Hu/NewbieGuide/raw/master/screenshoot/shape_dialog.png)
+![like dialog](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/shape_dialog.png)
 
 ```
 GuidePage.newInstance()
@@ -234,7 +234,7 @@ setLayoutRes在下层，多个RelativeGuide按照添加顺序依次添加。
 
 各个方向的对齐方式如下图所示：
 
-![sample](https://github.com/huburt-Hu/NewbieGuide/raw/master/screenshoot/relative_default_gravity.png)
+![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/relative_default_gravity.png)
 
 如Gravity.LEFT 的top与高亮view的top对齐，如果想改变，可以通过在传入布局的根布局添加marginTop。
 或者还可以继承RelativeGuide并复写offsetMargin方法修改位置，具体细节可查看RelativeGuide类。
@@ -276,7 +276,7 @@ NewbieGuide.with(FirstActivity.this)
 ```
 这里实现了具体显示引导层。
 
-![anchor](https://github.com/huburt-Hu/NewbieGuide/raw/master/screenshoot/anchor.png)
+![anchor](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/anchor.png)
 
 引导层其实是一个FrameLayout，设置anchor之后，引导层的大小就与anchor所占的位置相同。默认是android.R.id.content。setLayoutRes方法设置的说明布局则会添加到引导层的FrameLayout中。
 
@@ -389,7 +389,7 @@ NewbieGuide.with(FirstActivity.this)
 ```
 
 
-## [Q&A](https://github.com/huburt-Hu/NewbieGuide/wiki/Q&A)
+## [Q&A](https://github.com/fanghaiyang/NewbieGuide/wiki/Q&A)
 
 遇到问题可以看查看Q&A
 
