@@ -367,7 +367,7 @@ GuidePage.setExitAnimation(exitAnimation)//退出动画
 NewbieGuide.with(FirstActivity.this)
     .setLabel("listener")
     .alwaysShow(true)//总是显示，调试时可以打开
-    .setLayoutResSkip(R.layout.view_guide_layout, R.id.tvSkip)
+    .setLayoutRes(R.layout.view_guide_layout)
     .setOnLayoutInflatedListener(new OnLayoutInflatedListener() {
                                 @Override
                                 public void onLayoutInflated(View view, Controller controller) {
