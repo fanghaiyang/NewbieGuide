@@ -404,6 +404,6 @@ NewbieGuide.with(FirstActivity.this)
 
 ## 关于我
 
-联系邮箱404583721@qq.com
+联系邮箱：404583721@qq.com
 
 
