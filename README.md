@@ -388,8 +388,8 @@ NewbieGuide.with(FirstActivity.this)
 ```
 如下图所示：
 
-![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/skip.jpg)
-
+![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/skip1.jpg)
+![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/skip2.jpg)
 ### 跳过标签设置
      /**
       * 设置跳过标签
