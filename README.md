@@ -99,7 +99,7 @@ addHighLight方法有多个重写，完整参数如下：
     public GuidePage addHighLight(View view, HighLight.Shape shape, int round, int padding, @Nullable RelativeGuide relativeGuide)
 
 ```
-#### 高亮区域（v2.3.0新增）
+#### 高亮区域
 
 有些情况可能不太容易获得高亮view的引用，那么此时可以用添加高亮区域的方式来代替，
 计算出需要高亮的view在anchor中位置，将获得的rectF传入addHighLight方法
@@ -116,7 +116,7 @@ addHighLight方法有多个重写，完整参数如下：
     public GuidePage addHighLight(RectF rectF, HighLight.Shape shape, int round, @Nullable RelativeGuide relativeGuide)
 ```
 
-### 高亮区域点击事件（v2.4.0新增）
+### 高亮区域点击事件
 
 之前也是issues中提到需要这个功能，希望能够开放此api，因此在2.4版本中增加了。
 由于目前高亮view的相关参数过多，因此将一些新增的配置都放入了HighlightOptions中，HighlightOptions可以通过内部Builder对象构建：
@@ -138,7 +138,7 @@ NewbieGuide.with(FirstActivity.this)
          .show();
 ```
 
-### 自定义高亮区域绘制内容（v2.4.0新增）
+### 自定义高亮区域绘制内容
 
 该功能主要是为了满足[issue51](https://github.com/huburt-Hu/NewbieGuide/issues/51)提出的需求。
 
@@ -211,7 +211,7 @@ GuidePage.newInstance()
 该方法还有一个可变参数`setLayoutRes(@LayoutRes int resId, int... id)`，传入id数组表示在布局中点击让引导页消失或者进入下一页的View（例如，Button ok的id）。
 `setOnLayoutInflatedListener`设置布局填充完成的监听，当传入的xml(`R.layout.view_guide_dialog`)填充完成时会回答调用该监听，用于初始化自定布局的元素。
 
-#### 相对高亮位置的引导布局（v2.3.0新增）
+#### 相对高亮位置的引导布局
 
 鉴于好多人提出上面的方法对于箭头指向的引导控制起来比较麻烦，在不用的手机屏幕尺寸上会有位置差异。
 因此v2.3版本新增在高亮相对位置添加引导布局的方法。扩展addHighLight方法的重载，新增参数RelativeGuide：
@@ -239,7 +239,7 @@ setLayoutRes在下层，多个RelativeGuide按照添加顺序依次添加。
 如Gravity.LEFT 的top与高亮view的top对齐，如果想改变，可以通过在传入布局的根布局添加marginTop。
 或者还可以继承RelativeGuide并复写offsetMargin方法修改位置，具体细节可查看RelativeGuide类。
 
-### 引导页控制（v2.2.1版本新增）
+### 引导页控制
 
 v2.2.1版本Controller新增两个方法用于控制引导页的回退，可以在OnLayoutInflatedListener接口的回调方法中获取到controller对象，执行相应的操作。
 
