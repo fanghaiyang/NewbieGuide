@@ -27,7 +27,7 @@ import com.app.ocean.guide.model.HighlightOptions;
 import com.app.ocean.guide.model.RelativeGuide;
 
 public class FirstActivity extends AppCompatActivity {
-    private TextView btn_skip2;
+    private Button btn_skip2;
     private Button btn_skip;
 
     @Override

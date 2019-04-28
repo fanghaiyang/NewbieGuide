@@ -77,7 +77,7 @@
         android:layout_marginTop="@dimen/dp_10"
         android:text="跳过" />
 
-    <TextView
+    <Button
         android:id="@+id/btn_skip2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
