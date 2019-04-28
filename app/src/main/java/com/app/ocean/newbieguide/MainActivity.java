@@ -14,14 +14,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.app.hubert.guide.core.Controller;
-import com.app.hubert.guide.NewbieGuide;
-import com.app.hubert.guide.listener.OnGuideChangedListener;
-import com.app.hubert.guide.listener.OnLayoutInflatedListener;
-import com.app.hubert.guide.listener.OnPageChangedListener;
-import com.app.hubert.guide.model.GuidePage;
-import com.app.hubert.guide.model.HighLight;
-import com.app.hubert.guide.model.RelativeGuide;
+import com.app.ocean.guide.core.Controller;
+import com.app.ocean.guide.NewbieGuide;
+import com.app.ocean.guide.listener.OnGuideChangedListener;
+import com.app.ocean.guide.listener.OnLayoutInflatedListener;
+import com.app.ocean.guide.listener.OnPageChangedListener;
+import com.app.ocean.guide.model.GuidePage;
+import com.app.ocean.guide.model.HighLight;
+import com.app.ocean.guide.model.RelativeGuide;
 
 public class MainActivity extends AppCompatActivity {
 

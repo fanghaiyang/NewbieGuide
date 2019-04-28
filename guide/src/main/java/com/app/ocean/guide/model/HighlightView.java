@@ -1,11 +1,11 @@
-package com.app.hubert.guide.model;
+package com.app.ocean.guide.model;
 
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.view.View;
 
-import com.app.hubert.guide.util.LogUtil;
-import com.app.hubert.guide.util.ViewUtils;
+import com.app.ocean.guide.util.LogUtil;
+import com.app.ocean.guide.util.ViewUtils;
 
 /**
  * Created by hubert

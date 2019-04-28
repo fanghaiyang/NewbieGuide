@@ -1,8 +1,8 @@
-package com.app.hubert.guide.lifecycle;
+package com.app.ocean.guide.lifecycle;
 
 import android.support.v4.app.Fragment;
 
-import com.app.hubert.guide.util.LogUtil;
+import com.app.ocean.guide.util.LogUtil;
 
 /**
  * Created by hubert

@@ -1,13 +1,13 @@
-package com.app.hubert.guide.core;
+package com.app.ocean.guide.core;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.text.TextUtils;
 import android.view.View;
 
-import com.app.hubert.guide.listener.OnGuideChangedListener;
-import com.app.hubert.guide.listener.OnPageChangedListener;
-import com.app.hubert.guide.model.GuidePage;
+import com.app.ocean.guide.listener.OnGuideChangedListener;
+import com.app.ocean.guide.listener.OnPageChangedListener;
+import com.app.ocean.guide.model.GuidePage;
 
 import java.util.ArrayList;
 import java.util.List;

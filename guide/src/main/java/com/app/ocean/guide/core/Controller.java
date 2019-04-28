@@ -1,29 +1,22 @@
-package com.app.hubert.guide.core;
+package com.app.ocean.guide.core;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.SharedPreferences;
 import android.os.Build;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
 
-import com.app.hubert.guide.NewbieGuide;
-import com.app.hubert.guide.lifecycle.FragmentLifecycleAdapter;
-import com.app.hubert.guide.lifecycle.ListenerFragment;
-import com.app.hubert.guide.lifecycle.V4ListenerFragment;
-import com.app.hubert.guide.listener.OnGuideChangedListener;
-import com.app.hubert.guide.listener.OnLayoutInflatedListener;
-import com.app.hubert.guide.listener.OnPageChangedListener;
-import com.app.hubert.guide.model.GuidePage;
-import com.app.hubert.guide.model.RelativeGuide;
-import com.app.hubert.guide.util.LogUtil;
-import com.app.hubert.guide.util.ScreenUtils;
+import com.app.ocean.guide.NewbieGuide;
+import com.app.ocean.guide.lifecycle.FragmentLifecycleAdapter;
+import com.app.ocean.guide.lifecycle.ListenerFragment;
+import com.app.ocean.guide.lifecycle.V4ListenerFragment;
+import com.app.ocean.guide.listener.OnGuideChangedListener;
+import com.app.ocean.guide.listener.OnPageChangedListener;
+import com.app.ocean.guide.model.GuidePage;
+import com.app.ocean.guide.util.LogUtil;
 
 import java.lang.reflect.Field;
 import java.security.InvalidParameterException;

@@ -1,11 +1,11 @@
-package com.app.hubert.guide;
+package com.app.ocean.guide;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.app.hubert.guide.core.Builder;
+import com.app.ocean.guide.core.Builder;
 
 /**
  * Created by hubert

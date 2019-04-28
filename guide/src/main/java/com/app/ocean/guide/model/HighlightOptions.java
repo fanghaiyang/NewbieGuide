@@ -1,8 +1,8 @@
-package com.app.hubert.guide.model;
+package com.app.ocean.guide.model;
 
 import android.view.View;
 
-import com.app.hubert.guide.listener.OnHighlightDrewListener;
+import com.app.ocean.guide.listener.OnHighlightDrewListener;
 
 /**
  * Created by hubert on 2018/7/9.

@@ -1,4 +1,4 @@
-package com.app.hubert.guide.model;
+package com.app.ocean.guide.model;
 
 import android.graphics.RectF;
 import android.support.annotation.IntDef;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.app.hubert.guide.core.Controller;
-import com.app.hubert.guide.util.LogUtil;
+import com.app.ocean.guide.core.Controller;
+import com.app.ocean.guide.util.LogUtil;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

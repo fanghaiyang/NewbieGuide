@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
-import com.app.hubert.guide.model.GuidePage;
-import com.app.hubert.guide.model.HighLight;
-import com.app.hubert.guide.NewbieGuide;
+import com.app.ocean.guide.model.GuidePage;
+import com.app.ocean.guide.model.HighLight;
+import com.app.ocean.guide.NewbieGuide;
 
 import java.util.ArrayList;
 import java.util.HashMap;

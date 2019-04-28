@@ -10,10 +10,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.app.hubert.guide.NewbieGuide;
-import com.app.hubert.guide.core.Controller;
-import com.app.hubert.guide.listener.OnLayoutInflatedListener;
-import com.app.hubert.guide.model.GuidePage;
+import com.app.ocean.guide.NewbieGuide;
+import com.app.ocean.guide.core.Controller;
+import com.app.ocean.guide.listener.OnLayoutInflatedListener;
+import com.app.ocean.guide.model.GuidePage;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 

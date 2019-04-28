@@ -1,4 +1,4 @@
-package com.app.hubert.guide.listener;
+package com.app.ocean.guide.listener;
 
 /**
  * Created by hubert on 2017/11/16.

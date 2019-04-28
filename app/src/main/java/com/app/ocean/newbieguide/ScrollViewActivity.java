@@ -8,10 +8,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.app.hubert.guide.NewbieGuide;
-import com.app.hubert.guide.core.Controller;
-import com.app.hubert.guide.model.GuidePage;
-import com.app.hubert.guide.model.HighlightOptions;
+import com.app.ocean.guide.NewbieGuide;
+import com.app.ocean.guide.core.Controller;
+import com.app.ocean.guide.model.GuidePage;
+import com.app.ocean.guide.model.HighlightOptions;
 
 /**
  * Created by hubert on 2018/12/11.

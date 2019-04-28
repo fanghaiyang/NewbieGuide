@@ -1,6 +1,6 @@
-package com.app.hubert.guide.listener;
+package com.app.ocean.guide.listener;
 
-import com.app.hubert.guide.core.Controller;
+import com.app.ocean.guide.core.Controller;
 
 /**
  * Created by hubert  on 2017/7/27.

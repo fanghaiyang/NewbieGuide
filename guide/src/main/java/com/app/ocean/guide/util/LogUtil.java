@@ -1,9 +1,9 @@
-package com.app.hubert.guide.util;
+package com.app.ocean.guide.util;
 
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.app.hubert.guide.NewbieGuide;
+import com.app.ocean.guide.NewbieGuide;
 
 import java.util.Locale;
 

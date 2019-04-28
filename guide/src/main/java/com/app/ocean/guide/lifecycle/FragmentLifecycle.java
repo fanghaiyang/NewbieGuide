@@ -1,4 +1,4 @@
-package com.app.hubert.guide.lifecycle;
+package com.app.ocean.guide.lifecycle;
 
 public interface FragmentLifecycle {
     void onStart();

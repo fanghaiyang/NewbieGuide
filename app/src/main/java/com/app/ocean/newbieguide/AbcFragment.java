@@ -9,11 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.app.hubert.guide.core.Controller;
-import com.app.hubert.guide.listener.OnGuideChangedListener;
-import com.app.hubert.guide.model.GuidePage;
-import com.app.hubert.guide.model.HighLight;
-import com.app.hubert.guide.NewbieGuide;
+import com.app.ocean.guide.core.Controller;
+import com.app.ocean.guide.listener.OnGuideChangedListener;
+import com.app.ocean.guide.model.GuidePage;
+import com.app.ocean.guide.model.HighLight;
+import com.app.ocean.guide.NewbieGuide;
 
 /**
  * Created by hubert

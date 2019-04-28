@@ -1,4 +1,4 @@
-package com.app.hubert.guide.util;
+package com.app.ocean.guide.util;
 
 import android.app.Activity;
 import android.content.Context;
