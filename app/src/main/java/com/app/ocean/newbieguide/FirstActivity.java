@@ -7,8 +7,10 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +20,7 @@ import com.app.ocean.guide.core.Controller;
 import com.app.ocean.guide.listener.OnGuideChangedListener;
 import com.app.ocean.guide.listener.OnHighlightDrewListener;
 import com.app.ocean.guide.listener.OnLayoutInflatedListener;
+import com.app.ocean.guide.listener.OnPageChangedListener;
 import com.app.ocean.guide.model.GuidePage;
 import com.app.ocean.guide.model.HighLight;
 import com.app.ocean.guide.model.HighlightOptions;
@@ -187,5 +190,36 @@ public class FirstActivity extends AppCompatActivity {
                         .show();
             }
         });
+        findViewById(R.id.btn_skip).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NewbieGuide.with(FirstActivity.this)
+                        .setLabel("pageSkip")//设置引导层标示区分不同引导层，必传！否则报错
+//                .anchor(anchor)
+                        .addGuidePage(GuidePage.newInstance()
+                                .setLayoutResSkip(R.layout.view_guide_custom2, R.id.tvSkip))
+                        .setOnGuideChangedListener(new OnGuideChangedListener() {
+                            @Override
+                            public void onShowed(Controller controller) {
+//                        Toast.makeText(FirstActivity.this, "onShowed" , Toast.LENGTH_SHORT).show();
+                                //引导层显示
+                            }
+
+                            @Override
+                            public void onRemoved(Controller controller) {
+//                        Toast.makeText(FirstActivity.this, "onRemoved" , Toast.LENGTH_SHORT).show();
+                                //引导层消失（多页切换不会触发）
+                            }
+
+                            @Override
+                            public void onSkiped() {
+                                Toast.makeText(FirstActivity.this, "onSkiped" , Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .alwaysShow(true)//是否每次都显示引导层，默认false，只显示一次
+                        .show();//显示引导层(至少需要一页引导页才能显示)
+            }
+        });
+
     }
 }

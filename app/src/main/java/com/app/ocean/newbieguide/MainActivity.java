@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         NewbieGuide.with(this)
                 .setLabel("page")//设置引导层标示区分不同引导层，必传！否则报错
 //                .anchor(anchor)
+//                .addGuidePage(GuidePage.newInstance()
+//                 .setLayoutResSkip(R.layout.view_guide_custom, R.id.iv))
                 .setOnGuideChangedListener(new OnGuideChangedListener() {
                     @Override
                     public void onShowed(Controller controller) {
@@ -82,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onSkiped() {
-
+                        Toast.makeText(MainActivity.this, "onSkiped" , Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setOnPageChangedListener(new OnPageChangedListener() {

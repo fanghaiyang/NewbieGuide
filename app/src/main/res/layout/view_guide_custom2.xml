@@ -16,17 +16,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvSkip" />
-    <TextView
-        android:text="引导层可以任意布局,随意编辑,背景色也可以任意选择，但是建议选择有透明度的颜色"
-        android:gravity="center"
-        android:maxWidth="200dp"
-        android:textSize="15sp"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@android:color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
 
     <ImageView
         android:id="@+id/iv"
@@ -34,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="162dp"
         android:src="@mipmap/ic_launcher_round" />
 
     <TextView
