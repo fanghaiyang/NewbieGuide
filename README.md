@@ -387,7 +387,9 @@ NewbieGuide.with(FirstActivity.this)
     .addGuidePage(GuidePage.newInstance().addHighLight(btnListener))
     .show();
 ```
+如下图所示：
 
+![sample](https://github.com/fanghaiyang/NewbieGuide/raw/master/screenshoot/skip.jpg)
 
 ## [Q&A](https://github.com/fanghaiyang/NewbieGuide/wiki/Q&A)
 
