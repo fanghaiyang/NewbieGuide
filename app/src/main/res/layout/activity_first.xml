@@ -68,9 +68,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:text="相对位置展示引导布局" />
+
     <Button
         android:id="@+id/btn_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
         android:text="跳过" />
+
+    <TextView
+        android:id="@+id/btn_skip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_40"
+        android:padding="@dimen/dp_10"
+        android:text="跳过2" />
 </LinearLayout>

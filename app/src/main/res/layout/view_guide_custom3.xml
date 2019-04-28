@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:background="@android:color/black">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tvSkip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:maxWidth="200dp"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/dp_40"
         android:text="跳过"
-        android:textColor="@android:color/white"
-        android:textSize="15sp" />
+        android:textColor="#ffffff" />
 
     <ImageView
         android:layout_width="wrap_content"

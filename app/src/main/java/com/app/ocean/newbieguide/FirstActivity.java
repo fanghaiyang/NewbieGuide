@@ -27,13 +27,23 @@ import com.app.ocean.guide.model.HighlightOptions;
 import com.app.ocean.guide.model.RelativeGuide;
 
 public class FirstActivity extends AppCompatActivity {
+    private TextView btn_skip2;
+    private Button btn_skip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
+        btn_skip2 = findViewById(R.id.btn_skip2);
+        btn_skip = findViewById(R.id.btn_skip);
+        btn_skip2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                newbieGuide(btn_skip2);
+            }
+        });
         //简单使用
-        final Button btnSimple = (Button) findViewById(R.id.btn_simple);
+        final Button btnSimple = findViewById(R.id.btn_simple);
         btnSimple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,6 +128,7 @@ public class FirstActivity extends AppCompatActivity {
                             public void onRemoved(Controller controller) {
                                 Toast.makeText(FirstActivity.this, "引导层消失", Toast.LENGTH_SHORT).show();
                             }
+
                             @Override
                             public void onSkiped() {
 
@@ -190,13 +201,28 @@ public class FirstActivity extends AppCompatActivity {
                         .show();
             }
         });
-        findViewById(R.id.btn_skip).setOnClickListener(new View.OnClickListener() {
+        btn_skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                HighlightOptions options2 = new HighlightOptions.Builder()
+                        .setOnHighlightDrewListener(new OnHighlightDrewListener() {
+                            @Override
+                            public void onHighlightDrew(Canvas canvas, RectF rectF) {
+                                Paint paint = new Paint();
+                                paint.setColor(Color.TRANSPARENT);
+//                        paint.setStyle(Paint.Style.STROKE);
+//                        paint.setStrokeWidth(5);
+                                paint.setPathEffect(new DashPathEffect(new float[]{20, 20}, 0));
+                                canvas.drawCircle(rectF.centerX(), rectF.centerY(), rectF.width() / 2 + 10, paint);
+
+                            }
+                        })
+                        .build();
                 NewbieGuide.with(FirstActivity.this)
                         .setLabel("pageSkip")//设置引导层标示区分不同引导层，必传！否则报错
 //                .anchor(anchor)
                         .addGuidePage(GuidePage.newInstance()
+                                .addHighLightWithOptions(btn_skip, HighLight.Shape.CIRCLE, options2)
                                 .setLayoutResSkip(R.layout.view_guide_custom2, R.id.tvSkip))
                         .setOnGuideChangedListener(new OnGuideChangedListener() {
                             @Override
@@ -213,7 +239,7 @@ public class FirstActivity extends AppCompatActivity {
 
                             @Override
                             public void onSkiped() {
-                                Toast.makeText(FirstActivity.this, "onSkiped" , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(FirstActivity.this, "onSkiped", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .alwaysShow(true)//是否每次都显示引导层，默认false，只显示一次
@@ -222,4 +248,51 @@ public class FirstActivity extends AppCompatActivity {
         });
 
     }
+
+
+    private void newbieGuide(View view) {
+        HighlightOptions options3 = new HighlightOptions.Builder()
+                .setOnHighlightDrewListener(new OnHighlightDrewListener() {
+                    @Override
+                    public void onHighlightDrew(Canvas canvas, RectF rectF) {
+                        Paint paint = new Paint();
+                        paint.setColor(Color.WHITE);
+                        paint.setStyle(Paint.Style.STROKE);
+                        paint.setStrokeWidth(5);
+                        paint.setPathEffect(new DashPathEffect(new float[]{20, 20}, 0));
+                        float left = rectF.centerX() - rectF.width() / 2;
+                        float top = rectF.centerY() - rectF.height() / 2;
+                        float tmp = 20;
+                        float mRadius = 20;
+                        canvas.drawRoundRect(new RectF(left - tmp, top - tmp, rectF.width() + left + tmp, rectF.height() + top + tmp), mRadius, mRadius, paint);// + tmp
+                    }
+                })
+                .build();
+        NewbieGuide.with(FirstActivity.this)
+                .setLabel("guide3")
+//                        .setShowCounts(3)//控制次数
+                .alwaysShow(true)//总是显示，调试时可以打开
+                .addGuidePage(GuidePage.newInstance()
+                        .addHighLightWithOptions(view, HighLight.Shape.ROUND_RECTANGLE, options3)
+                        .setLayoutResSkip(R.layout.view_guide_custom3, R.id.tvSkip))
+                .setOnGuideChangedListener(new OnGuideChangedListener() {
+                    @Override
+                    public void onShowed(Controller controller) {
+//                        ToastUtils.makeToast("引导层显示");
+                    }
+
+                    @Override
+                    public void onRemoved(Controller controller) {
+//                        ToastUtils.makeToast("引导层消失");
+                    }
+
+                    @Override
+                    public void onSkiped() {
+                        NewbieGuide.setSkipLabel(FirstActivity.this, "guide4");
+                        Toast.makeText(FirstActivity.this, "onSkiped--guide4", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .show();
+    }
+
 }
