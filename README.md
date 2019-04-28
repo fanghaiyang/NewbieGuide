@@ -362,7 +362,45 @@ GuidePage.setExitAnimation(exitAnimation)//退出动画
 
 
 ### 引导层跳过后面引导
+方法1：
+```
+NewbieGuide.with(FirstActivity.this)
+    .setLabel("listener")
+    .alwaysShow(true)//总是显示，调试时可以打开
+    .setLayoutResSkip(R.layout.view_guide_layout, R.id.tvSkip)
+    .setOnLayoutInflatedListener(new OnLayoutInflatedListener() {
+                                @Override
+                                public void onLayoutInflated(View view, Controller controller) {
+                                    TextView tvSkip = view.findViewById(R.id.tvSkip);
+                                    tvSkip.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Toast.makeText(FirstActivity.this, "onClick--guide4", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+                                }
+                            })))
+    .setOnGuideChangedListener(new OnGuideChangedListener() {
+        @Override
+        public void onShowed(Controller controller) {
+            Toast.makeText(FirstActivity.this, "引导层显示", Toast.LENGTH_SHORT).show();
+        }
 
+        @Override
+        public void onRemoved(Controller controller) {
+            Toast.makeText(FirstActivity.this, "引导层消失", Toast.LENGTH_SHORT).show();
+        }
+        @Override
+        public void onSkiped() {
+             Toast.makeText(FirstActivity.this, "引导层跳过后面引导", Toast.LENGTH_SHORT).show();
+        }
+    })
+    .addGuidePage(GuidePage.newInstance().addHighLight(btnListener))
+    .show();
+```
+
+
+ 方法2：
 ```
 NewbieGuide.with(FirstActivity.this)
     .setLabel("listener")

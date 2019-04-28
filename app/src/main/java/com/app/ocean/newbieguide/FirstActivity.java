@@ -274,7 +274,20 @@ public class FirstActivity extends AppCompatActivity {
                 .alwaysShow(true)//总是显示，调试时可以打开
                 .addGuidePage(GuidePage.newInstance()
                         .addHighLightWithOptions(view, HighLight.Shape.ROUND_RECTANGLE, options3)
-                        .setLayoutResSkip(R.layout.view_guide_custom3, R.id.tvSkip))
+                        .setLayoutRes(R.layout.view_guide_custom3)
+                        .setOnLayoutInflatedListener(new OnLayoutInflatedListener() {
+                            @Override
+                            public void onLayoutInflated(View view, Controller controller) {
+                                TextView tvSkip = view.findViewById(R.id.tvSkip);
+                                tvSkip.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        Toast.makeText(FirstActivity.this, "onClick--guide4", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                            }
+                        }))
+
                 .setOnGuideChangedListener(new OnGuideChangedListener() {
                     @Override
                     public void onShowed(Controller controller) {
